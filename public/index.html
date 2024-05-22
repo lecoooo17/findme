@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="menu">
+            <h2>Sticker Menu</h2>
+            <p>These are the stickers you can collect: <br><span style="font-size: smaller;"><i>When you find the sticker, tap it with your phone to get the access key. {NFC READING HAS TO BE TURNED ON}</i></span></p>
+
+            <div id="stickers">
+                <div id="sticker-1">
+                    <p>Eeviee</p>
+                    <img src="Pokemon1.png" alt="Sticker 1 Image" style="width: 50px; height: 50px;">
+                    <p class="sticker-status">Not found!</p>
+                    <input type="text" id="sticker-code-1" placeholder="Enter code">
+                    <button class="submit-button" data-sticker-id="1" onclick="submitCode(this)">Submit</button>
+                    <p>Click the button for hint</p>
+                    <button onclick="showHint(1)">Hint</button>
+                </div>
+                <div id="sticker-2">
+                    <p>Growlithe</p>
+                    <img src="Pokemon2.png" alt="Sticker 2 Image" style="width: 50px; height: 50px;">
+                    <p class="sticker-status">Not found!</p>
+                    <input type="text" id="sticker-code-2" placeholder="Enter code">
+                    <button class="submit-button" data-sticker-id="2" onclick="submitCode(this)">Submit</button>
+                    <p>Click the button for hint</p>
+                    <button onclick="showHint(2)">Hint</button>
+                </div>
+                <div id="sticker-3">
+                    <p>Dragonite</p>
+                    <img src="Pokemon3.png" alt="Sticker 3 Image" style="width: 50px; height: 50px;">
+                    <p class="sticker-status">Not found!</p>
+                    <input type="text" id="sticker-code-3" placeholder="Enter code">
+                    <button class="submit-button" data-sticker-id="3" onclick="submitCode(this)">Submit</button>
+                    <p>Click the button for hint</p>
+                    <button onclick="showHint(3)">Hint</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
